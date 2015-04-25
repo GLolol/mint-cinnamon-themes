@@ -1,3 +1,14 @@
+mint-cinnamon-themes (2014.11.18.1+utopia1) unstable; urgency=medium
+
+  * Bump debian packaging to debhelper version 9.
+  * Bump compat version to 9.
+  * Bump standards version to 3.9.6.
+  * Rename package to mint-cinnamon-themes to be more specific.
+  * Set myself as maintainer.
+  * Update debian/control file.
+
+ -- James Lu <glolol1@hotmail.com>  Sat, 25 Apr 2015 10:19:11 -0700
+
 cinnamon-themes (2014.11.18.1) rebecca; urgency=medium
 
   * stop fullscreen windows from going behind the panel in some cases

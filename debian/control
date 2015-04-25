@@ -1,12 +1,18 @@
-Source: cinnamon-themes
-Section: universe/gnome
+Source: mint-cinnamon-themes
+Section: x11
 Priority: optional
-Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
+Maintainer: James Lu <glolol1@hotmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
 
-Package: cinnamon-themes
+Package: mint-cinnamon-themes
 Architecture: all
-Description: Cinnamon themes
- A collection of the best themes available for Cinnamon.
-
+Depends: ${misc:Depends}
+Replaces: cinnamon-themes
+Provides: cinnamon-themes
+Description: Cinnamon themes from Linux Mint
+ Cinnamon is a desktop environment which provides advanced innovative features
+ and a traditional user experience.
+ .
+ This package provides the Cinnamon themes bundled with a regular installation
+ of Linux Mint.
