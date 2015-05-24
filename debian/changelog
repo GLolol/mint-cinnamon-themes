@@ -1,3 +1,9 @@
+mint-cinnamon-themes (2014.11.18.1+utopia2) unstable; urgency=medium
+
+  * Add a transitional package: cinnamon-themes -> mint-cinnamon-themes.
+
+ -- James Lu <glolol1@hotmail.com>  Sat, 23 May 2015 16:50:27 -0700
+
 mint-cinnamon-themes (2014.11.18.1+utopia1) unstable; urgency=medium
 
   * Bump debian packaging to debhelper version 9.
