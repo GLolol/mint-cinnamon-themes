@@ -1,3 +1,9 @@
+mint-cinnamon-themes (2015.06.14+utopia1) unstable; urgency=low
+
+  * Merge upstream master (2015.06.14).
+
+ -- James Lu <glolol1@hotmail.com>  Thu, 02 Jul 2015 13:42:48 -0700
+
 cinnamon-themes (2015.06.14) rafaela; urgency=medium
 
   [ darealshinji ]
