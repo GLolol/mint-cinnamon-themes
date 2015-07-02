@@ -1,3 +1,7 @@
 #!/usr/bin/make -f
 %:
 	dh $@
+
+override_dh_auto_build:
+	# fix file permissions, just in case
+	find usr -type f -print -exec chmod 0644 '{}' \;
