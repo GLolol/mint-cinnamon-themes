@@ -4,6 +4,41 @@ mint-cinnamon-themes (2015.06.14+utopia1) unstable; urgency=low
 
  -- James Lu <glolol1@hotmail.com>  Thu, 02 Jul 2015 13:42:48 -0700
 
+cinnamon-themes (2016.05.03) sarah; urgency=medium
+
+  * Linux Mint theme: Switch snap OSD tint from blue to green
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 May 2016 12:19:30 +0100
+
+cinnamon-themes (2016.04.22) sarah; urgency=medium
+
+  * Fix sound applet -> applications -> volume sliders
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 Apr 2016 14:17:39 +0100
+
+cinnamon-themes (2015.11.06) rosa; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-X: Tweak theming for the new workspace and sound applets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 06 Nov 2015 18:39:41 +0000
+
+cinnamon-themes (2015.10.21) rosa; urgency=medium
+
+  [ JosephMcc ]
+  * Linux Mint: Tweak the look of modal dialogs
+
+  [ Clement Lefebvre ]
+  * Reduced opacity of Alt-tab preview backdrop to 65%
+
+  [ JosephMcc ]
+  * Linux Mint: add some theming for the new workspace switcher
+  * Linux Mint: Clean up the styling of check and radio buttons
+  * Mint-X: Rework styling of check and radio buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 21 Oct 2015 11:13:50 +0100
+>>>>>>> 6595f81
+
 cinnamon-themes (2015.06.14) rafaela; urgency=medium
 
   [ darealshinji ]

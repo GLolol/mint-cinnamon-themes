@@ -143,11 +143,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-sub-menu .popup-menu-item:ltr {
-    padding-right: 0em;
+    padding-right: 1.75em;
 }
 
 .popup-sub-menu .popup-menu-item:rtl {
-    padding-left: 0em;
+    padding-left: 1.75em;
 }
 
 .popup-sub-menu StScrollBar {
@@ -960,7 +960,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .switcher-preview-backdrop {
-   background-color: rgba(25,25,25,0.95);
+   background-color: rgba(25,25,25,0.65);
 }
 
 /* ===================================================================
@@ -976,14 +976,15 @@ StScrollBar StButton#vhandle:hover
     color: #babdb6;
     box-shadow: 0px 0px 12px 6px rgba(0,0,0,1);
 
-    padding-right: 42px;
-    padding-left: 42px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .modal-dialog-button-box {
-    spacing: 21px;
+    spacing: 15px;
+    padding-top: 15px;
 }
 
 .modal-dialog-button {
@@ -1794,31 +1795,61 @@ StScrollBar StButton#vhandle:hover
 /* ===================================================================
  * Workspace Switcher applet (workspaceSwitcher.js)
  * ===================================================================*/
-#workspaceSwitcher {
-    spacing: 0px;
-    padding: 3px;
-    
-}
-
-.workspace-switcher-box {
+/* Controls the styling when using the "Simple buttons" option */
+.workspace-switcher {
     padding-left: 3px;
     padding-right: 3px;
 }
 
 .workspace-button {
     width: 20px;
-    height: 10px;   
+    height: 10px;
     color: rgba(200,200,200,1);
-    transition-duration: 100;
     border: 1px;
     border-color: rgba(200,200,200,1);
     padding: 1px;
+    transition-duration: 300;
 }
 
 .workspace-button:outlined {
-    padding: 1px;    
+    padding: 1px;
     background: rgba(200,200,200,1);
     color: rgba(55,55,55,1);
+}
+
+/* Controls the style when using the "Visual representation" option */
+.workspace-graph {
+    padding: 3px;
+    spacing: 3px;
+}
+
+.workspace-graph .workspace {
+    border: 1px solid #555;
+    background-gradient-direction: vertical;
+    background-gradient-start: #2a2a2a;
+    background-gradient-end: #555;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.workspace-graph .workspace:active {
+    border: 1px solid #ccc;
+    background-gradient-direction: vertical;
+    background-gradient-start: #111;
+    background-gradient-end: #3d3d3d;
+}
+
+.workspace-graph .workspace .windows {
+    -active-window-background: rgba(140, 140, 140, 1.0);
+    -active-window-border: rgba(0, 0, 0, 0.7);
+    -inactive-window-background: rgba(140, 140, 140, 1.0);
+    -inactive-window-border: rgba(0, 0, 0, 0.7);
+}
+
+.workspace-graph .workspace:active .windows {
+    -active-window-background: rgba(255, 255, 255, 1.0);
+    -active-window-border: rgba(0, 0, 0, 0.9);
+    -inactive-window-background: rgba(140, 140, 140, 1.0);
+    -inactive-window-border: rgba(0, 0, 0, 0.7);
 }
 
 /* ===================================================================
@@ -1996,26 +2027,18 @@ StScrollBar StButton#vhandle:hover
 /* Check Boxes */
 .check-box CinnamonGenericContainer {
     spacing: .2em;
-    min-height: 30px;
-    padding-top: 2px;
 }
 
-.check-box StBin {
-    width: 24px;
-    height: 18px;
+.check-box StBin,
+.check-box:focus StBin {
+    width: 16px;
+    height: 16px;
     background-image: url("checkbox-off.svg");
 }
 
-.check-box:focus StBin {
-    background-image: url("checkbox-off-focused.svg");
-}
-
-.check-box:checked StBin {
-    background-image: url("checkbox.svg");
-}
-
+.check-box:checked StBin,
 .check-box:focus:checked StBin {
-    background-image: url("checkbox-focused.svg");
+    background-image: url("checkbox.svg");
 }
 
 .check-box StLabel {
@@ -2024,25 +2047,19 @@ StScrollBar StButton#vhandle:hover
 
 .radiobutton CinnamonGenericContainer {
     spacing: .2em;
-    height: 26px;
+    height: 18px;
     padding-top: 2px;
 }
 
-.radiobutton StBin {
-    width: 22px;
-    height: 22px;
+.radiobutton StBin,
+.radiobutton:focus StBin {
+    width: 16px;
+    height: 16px;
     background-image: url("radiobutton-off.svg");
     border-radius: 15px;
 }
 
-.radiobutton:focus StBin {
-    background-image: url("radiobutton-off.svg");
-}
-
-.radiobutton:checked StBin {
-    background-image: url("radiobutton.svg");
-}
-
+.radiobutton:checked StBin,
 .radiobutton:focus:checked StBin {
     background-image: url("radiobutton.svg");
 }
@@ -2111,7 +2128,7 @@ StScrollBar StButton#vhandle:hover
 
 .tile-preview.snap,
 .tile-hud.snap {
-    background-color: rgba(134, 134, 170, 0.5);
+    background-color: rgba(134, 170, 134, 0.5);
     border: 1px solid rgba(85, 85, 85, 0.8);
 }
 
