@@ -5,3 +5,21 @@
 override_dh_auto_build:
 	# fix file permissions, just in case
 	find usr -type f -print -exec chmod 0644 '{}' \;
+
+# This get-orig-source rule creates a tarball given the Git URL and commit hash.
+# It looks at the "commithash" portion of the Debian package version, which is
+# usually in the format major.version+git~commithash-debrevision.
+PACKAGE = $(shell dpkg-parsechangelog --show-field=Source)
+VERSION = $(shell dpkg-parsechangelog --show-field=Version)
+ORIG_VERSION = $(shell echo $(VERSION) | cut -f 1 -d '-')
+COMMIT = $(shell echo $(ORIG_VERSION) | cut -f 2 -d '~')
+URL = https://github.com/linuxmint/cinnamon-themes
+
+get-orig-source:
+	# Cloning upstream repository.
+	git clone $(URL) "$(PACKAGE)-$(ORIG_VERSION)"
+	# Generating archive from commit.
+	cd "$(PACKAGE)-$(ORIG_VERSION)" && git archive -v $(COMMIT) -o \
+	../$(PACKAGE)_$(ORIG_VERSION).orig.tar.gz
+	# Removing temporary Git tree.
+	rm -rf "$(PACKAGE)-$(ORIG_VERSION)"

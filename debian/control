@@ -1,9 +1,9 @@
 Source: mint-cinnamon-themes
 Section: x11
 Priority: optional
-Maintainer: James Lu <glolol1@hotmail.com>
+Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 
 Package: mint-cinnamon-themes
 Architecture: all
@@ -16,13 +16,3 @@ Description: Cinnamon themes from Linux Mint
  .
  This package provides the Cinnamon themes bundled with a regular installation
  of Linux Mint.
-
-Package: cinnamon-themes
-Architecture: all
-Depends: mint-cinnamon-themes
-Description: Transitional package for mint-cinnamon-themes
- Cinnamon is a desktop environment which provides advanced innovative features
- and a traditional user experience.
- .
- This transitional package eases upgrades to the new mint-cinnamon-themes
- package.

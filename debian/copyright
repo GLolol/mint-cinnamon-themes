@@ -4,12 +4,12 @@ Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
 Source: https://github.com/linuxmint/cinnamon-themes
 
 Files: *
-Copyright: 2013-2015 Clement Lefebvre <root@linuxmint.com>
+Copyright: 2013-2016 Clement Lefebvre <root@linuxmint.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2013-2015 Clement Lefebvre <root@linuxmint.com>
-           2015 James Lu <glolol@overdrive.pw>
+Copyright: 2013-2016 Clement Lefebvre <root@linuxmint.com>
+           2016 James Lu <bitflip3@gmail.com>
 License: GPL-3.0+
 
 License: GPL-3.0+

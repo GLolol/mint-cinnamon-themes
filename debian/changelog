@@ -1,3 +1,15 @@
+mint-cinnamon-themes (2016.05.03+git~6595f81-0utopia1) unstable; urgency=medium
+
+  * Switch to non-native packaging.
+  * New upstream release.
+  * debian/ folder changes:
+     - Remove cinnamon-themes transitional package.
+     - control, copyright: update my email.
+     - Bump standards version to 3.9.8; no changes needed.
+     - copyright: update years to 2016
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 03 Sep 2016 22:29:58 -0700
+
 mint-cinnamon-themes (2015.06.14+utopia1) unstable; urgency=low
 
   * Merge upstream master (2015.06.14).
