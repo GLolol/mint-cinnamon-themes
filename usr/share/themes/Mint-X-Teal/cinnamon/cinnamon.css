@@ -236,7 +236,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-sub-menu StScrollBar StBin#trough {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .popup-sub-menu StScrollBar StBin#vhandle {
@@ -431,6 +431,14 @@ StScrollBar StButton#vhandle:hover {
     padding-right: 0px;
     spacing: 0px;
     margin: 0px;
+}
+
+.system-status-icon.warning {
+    color: #d2aa1e;
+}
+
+.system-status-icon.error {
+    color: #d54444;
 }
 
 #appMenu {
@@ -947,7 +955,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-nonwork-day {
-    background-color: rgba(128, 128, 128, .1);
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .calendar-today {
@@ -1224,14 +1232,12 @@ StScrollBar StButton#vhandle:hover {
     font-size: 10pt;
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
-    padding-right: 42px;
-    padding-left: 42px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 20px;
 }
 
 .modal-dialog-button-box {
     spacing: 110px;
+    padding-top: 20px;
 }
 
 .modal-dialog-button {
@@ -1239,8 +1245,6 @@ StScrollBar StButton#vhandle:hover {
     font-size: 10pt;
     color: rgb(70, 70, 70);
     border-image: url("button-assets/button.png") 4;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 3px 31px 4px;
 }
 
@@ -1331,7 +1335,7 @@ StScrollBar StButton#vhandle:hover {
 .run-dialog {
     padding-right: 12px;
     padding-left: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     padding-top: 20px;
 }
 
@@ -1626,7 +1630,7 @@ StScrollBar StButton#vhandle:hover {
  * Magnifier
  * ===================================================================*/
 .magnifier-zoom-region {
-    border: 2px solid rgba(128, 0, 0, 255);
+    border: 2px solid rgba(128, 0, 0, 1);
 }
 
 .magnifier-zoom-region.full-screen {
@@ -1805,11 +1809,11 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-category-button-label:ltr {
-    padding-left: 5px
+    padding-left: 5px;
 }
 
 .menu-category-button-label:rtl {
-    padding-right: 5px
+    padding-right: 5px;
 }
 
 .menu-category-button-button:hover {
@@ -2246,6 +2250,7 @@ StScrollBar StButton#vhandle:hover {
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 1px;
+    spacing: 3px;
 }
 
 .applet-box.vertical {
@@ -2317,7 +2322,7 @@ StScrollBar StButton#vhandle:hover {
     padding: 8px 12px;
     border-radius: 2px;
     height: 15px;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
     font-weight: bold;
     selected-color: #fff;
@@ -2424,14 +2429,11 @@ StScrollBar StButton#vhandle:hover {
  * About Dialog (applet.js and desklet.js)
  * ===================================================================*/
 .about-content {
-    width: 300px;
-    height: 150px;
-    spacing: 8px;
-    padding-bottom: 16px;
+    width: 500px;
 }
 
 .about-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -2444,21 +2446,22 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .about-scrollBox {
+    height: 100px;
     border: solid 1px grey;
     border-radius: 4px;
 }
 
 .about-scrollBox-innerBox {
-    padding: 1.2em;
+    padding: 0.5em;
     spacing: 1.2em;
 }
 
 .about-description {
     padding-top: 4px;
+    padding-bottom: 8px;
 }
 
 .about-version {
-    padding-left: 7px;
 }
 
 /* ===================================================================
