@@ -1,3 +1,10 @@
+cinnamon-themes (2017.06.20+git~2dbe8da-0utopia1) unstable; urgency=low
+
+  * Utopia repository upload.
+  * New upstream release.
+
+ -- James Lu <james@overdrivenetworks.com>  Sun, 21 Jan 2018 00:47:37 -0800
+
 cinnamon-themes (2017.06.20) sonya; urgency=medium
 
   [ JosephMcc ]
